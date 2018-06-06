@@ -12,3 +12,9 @@ The script computes distances between CPs and searches for the optimal route: mi
 You can define start and end CPs, total distance you are planning to cover, number of optimal routes to keep, as well as pathes to logfile (contains information about the number of routes could be continued and the number of routes completed on every iteration of the recursive algorithm). 
 
 Requirements: TAB file with CPs.
+
+##########################
+
+## Test.py
+
+Python script for different tests and python investigation.
