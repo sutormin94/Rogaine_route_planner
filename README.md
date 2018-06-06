@@ -3,7 +3,7 @@ Planning routes for rogains and other orienteering sports
 
 ##########################
 
-## Rogaine route planner
+## Rogaine_planner.py
 
 Script takes a TAB file contains a set of control points (CPs) as input:
 CP_ID\tCP_Score\tCP_x\tCP_y\n
