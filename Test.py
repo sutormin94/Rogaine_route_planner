@@ -1,5 +1,7 @@
 from scipy import stats
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib_venn import venn2, venn3, venn3_circles
 np.random.seed(12345678)
 
 rvs1 = stats.norm.rvs(loc=5,scale=10,size=500)
@@ -45,3 +47,6 @@ ar_to_sort=[[['SE', 0, 0], ['30', 621.022543874214, 3], ['31', 1503.798279834372
             [['SE', 0, 0], ['30', 621.022543874214, 3], ['31', 1503.7982798343728, 6], ['36', 3211.7985725743947, 9], ['32', 5111.5367124242, 12], ['33', 5802.784858895495, 15], ['35', 9255.85841733586, 18], ['38', 10417.234325472411, 21], ['37', 11830.040044600133, 24], ['34', 13943.009755693976, 27], ['SE', 14702.421370037608, 27]]]
 
 print(ar_to_sort.sort(key=lambda tup: tup[-1][2], reverse=True))
+
+venn3(subsets = ([1, 2, 3, 4, 5, 6, 7]), set_labels = ('Ciprofloxacin', 'Microcin B17', 'Oxolinic acid'))
+plt.show()
